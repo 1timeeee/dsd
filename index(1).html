@@ -79,22 +79,6 @@
   </div>
 
   <script>
-    // عرض الوقت
-    function showTime() {
-      var today = new Date();
-      var hours = today.getHours();
-      var minutes = today.getMinutes();
-      var seconds = today.getSeconds();
-      var period = hours < 12 ? 'AM' : 'PM';
-
-      if (hours > 12) hours -= 12;
-      if (hours === 0) hours = 12;
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      seconds = seconds < 10 ? '0' + seconds : seconds;
-
-      document.getElementById('clock').innerHTML = hours + ":" + minutes + ":" + seconds + " " + period;
-    }
-
     setInterval(showTime, 1000); // 
 
     //  IP 
